@@ -1,0 +1,79 @@
+.consultation-gym { 
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.consultation-img {
+  max-width: 1200px;
+  border-radius: 5px;
+  height: 685px; 
+}
+#consultationForm {
+  max-width: 700px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  background: grey;
+  margin: 0 auto;
+}
+h2,
+p {
+  margin: 5px 0 30px 0;
+  text-align: center;
+}
+.alert {
+  text-align: center;
+  padding: 10px;
+  background: rgb(168, 240, 177);
+  color: white;
+  margin-bottom: 10px;
+  display: none;
+}
+input[type='text'],
+input[type='email'],
+input[type='telephone'],
+input[type='password'],
+textarea {
+  border: 1px;
+  border-radius: 2px;
+  margin-bottom: 15px;
+  box-shadow: 2px;
+  color: rgb(27, 27, 26);
+  background-color: rgb(223, 224, 235);
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0;
+  height: auto;
+  font-size: 15px;
+}
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+button {
+  padding: 25px 40px;
+  color: rgb(207, 190, 190);
+  background-color: gray;
+  font-size: 15px;
+  margin: 15px 0px 0px;
+  width: 100%;
+  text-align: center;
+  border: solid rgb(216, 207, 207);
+  border-radius: 5px;
+}
+.consultation-content {
+  padding: 15px 0;
+}
+@media screen and (max-width: 320px) {
+.consultation-img {
+  width: 320px;
+  height: 220px;
+  
+  }
+}
+

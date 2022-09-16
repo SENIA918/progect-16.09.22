@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Спортивное питание</title>
+  <link rel="icon" href="img/icons/weightliftsport_weightlift_13267.png" sizes="50x50" type="img/icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;600&family=Lobster&family=Lora:wght@400;700&family=Playfair+Display:wght@700&family=Roboto:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img class="icon-sport" src="img/icons/weightliftsport_weightlift_13267.png" alt="icon-sport">
+      </div>
+      <ul class="links">
+        <li><a href="main.html">Главная</a></li>
+        <li><a href="html/catalog.html">Кaталог</a></li>
+        <li><a href="html/consultation.html">Консультация</a></li>
+        <li><a href="html/contact.html">Контакты</a></li>
+        <li><botton class="box-btn">Регистрация</botton>
+          <div class="popup-overlay hidden">
+            <form class="order-form" action="" method="POST" id="registrationForm">
+              <div class="close"><img src="img/svg/211652_close_icon.svg"></div>
+              <h2>Регистрация</h2>
+                <input type = "email" name="email" value="" id="email" required placeholder = "Email"/>
+                <input type = "text" name="password" value="" id="password" required placeholder ="Пароль"/>
+                <input type ="text" name="repeatPassword" value="" id="repeatPassword" required placeholder ="Пaвторный пароль"/>
+                <button class="btn-registration" type="submit">Отправить</button>
+            </form>
+          </div>
+        </li>
+      </ul>
+      <div class="toggle">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+      <ol class="breadcrumb"itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a href="/" title="Главная" itemprop="item">
+                <span itemprop="name">Главная</span>
+                <meta itemprop="position" content="0">
+            </a>
+        </li>
+      </ol>
+  </header>
+    <div class="content-center">
+      <div class=""><h4>Магазин спортивного питания</h4></div>
+      <section>
+        <div class="table-contents">
+          <div class="slider">
+            <div class="item">
+              <img src="img/menu/360_F_237050411_c2wC4rdclQkjYIza2pp5pi7rcwvQqQHJ.jpg" alt="first picture">
+            </div>
+            <div class="item">
+              <img src="img/menu/240_F_223970720_Oq3VQQCGBUX4WUmMxxqX5XBwCoqK0p4E.jpg" alt="second picture">
+            </div>
+            <div class="item">
+              <img src="img/menu/kB3A2NkfIhw.jpg" alt="third picture">
+            </div>
+              <a id="prev"><!--&#10094;--></a>
+              <a id="next"><!--&#10095;--></a>
+          </div>
+        <div class="slider-dots">
+          <span class="sliderDotsItem"></span> 
+          <span class="sliderDotsItem"></span> 
+          <span class="sliderDotsItem"></span> 
+        </div>
+        <div>
+          <h5>Наша компания предлагает проверенные и легальные продукты для здоровья: спортивное питание, пищевые добавки.Для комфорта и удовольствия при занятиях любимым спортом - спортивная одежда и аксессуары.
+          Спортивные пищевые добавки помогают получить желаемый результат в спорте,улучшают качество жизни, помогают лучше чувствовать себя в течение дня. Наша философия - быть одной командой с нашими клиентами!</h5>
+        </div>
+      </section>
+    </div>
+    <div class="card  mx-5" style = "max-width: 1300px;" >
+      <div class="row g-0">
+        <div class="col-md-6">
+          <img src="img/menu/img 600x620/pokhudeniye-4.jpg" class="img-fluid rounded-start" alt="img 600x620/pokhudeniye-4.jpg">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <p class="card-text">Стараемся помочь в меру знаний и возможностей. Получаем новые знания, чтобы ответить на самые неожиданные вопросы наших покупателей. Читаем отзывы и стараемся улучшить сервис, чтобы вам было комфортно и приятно с нами сотрудничать. Предлагаем безопасные, проверенные и легальные продукты для спорта и здоровой жизни на каждый день.</p>
+            <p class="card-text"><small class="text-muted"></small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card  mx-5" id="cards-revers" style="max-width: 1300px;" >
+      <div class="row g-0" id="revers">
+        <div class="col-md-6">
+          <div class="card-body">
+            <p class="card-text">GUM-LIFE - друг-эксперт в мире спорта и здорового образа жизни! Научный подход, личный опыт и позитивное отношение к новому. Надеемся, что это помогает поддерживать полезные и приятные отношения с нашими клиентами
+            </p>
+            <p class="card-text"><small class="text-muted"></small></p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="img/menu/img 600x620/smile-girl-fitness.jpg" class="img-fluid rounded-start" alt="img 600x620/smile-girl-fitness.jpg">
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3 mx-5" style="max-width: 1300px;" >
+      <div class="row g-0">
+        <div class="col-md-6">
+          <img src="img/menu/img 600x620/sa-11.jpg" class="img-fluid rounded-start" alt="img 600x620/sa-11.jpg">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <p class="card-text">	Доверительный контакт по удобному каналу связи,профессиональные консультации 7 дней в неделю,сертифицированные товары с заявленным составом,товары только лично проверенных брендов,справедливые цены и приятные бонусы,доставка по Беларуси в течении 3-х рабочих дней,отправка заказа на следующий рабочий день после того,как вы его подтвердили.
+            </p>
+            <p class="card-text"><small class="text-muted"></small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="callback-bt">
+      <a href="html/consultation.html">
+      <div class="text-call">
+        <span>Задать<br>вопрос</span>
+      </div>
+      </a>
+    </div>
+    <footer>
+      <div class="Copyright">
+        &#169; Copyright 2022 &#8208; GUM-LIFE &#8208; All Rights Reserved
+      </div>
+      <div class="icon-footer">
+        <a href="https://vk.com/"><img src="img/svg/1492718766-vk_83600.svg" alt="vk"></a>
+        <a href="https://www.instagram.com/"><img src="img/svg/instagram_black_logo_icon_147122.svg" alt="instagram"></a>
+        <a href="https://web.telegram.org/"><img src="img/svg/telegram_logo_icon_144811.svg" alt="telegram"></a>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>   
+  <script src="./js/main.js"></script>
+</body>
+</html>
+

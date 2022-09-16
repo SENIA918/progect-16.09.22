@@ -1,0 +1,49 @@
+body {
+  background-color: rgb(164, 169, 173);
+}
+.box {
+  max-width: 900px;
+  background-color: rgb(97, 111, 122);
+  margin: 0 auto;
+  border-radius: 5px;
+}
+p,
+h3 {
+  text-align: center;
+}
+
+#four {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 5px;
+  max-width: 850px;
+  background-color: rgb(135, 147, 156);
+  padding-bottom: 40px ;
+}
+button {
+  width: 100px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 5px;
+}
+input {
+  width: 93%;
+  height: 30px;
+  margin: 10px 25px;
+  border-radius: 5px;
+}
+label {
+  margin-left: 25px;
+}
+#catalogResetButton {
+  background-color: rgb(96, 116, 134);
+}
+.special {
+  background-color: rgb(128, 91, 112);
+  margin-left: 25px;
+}
+#catalogBtn{
+  background-color: CadetBlue;
+}

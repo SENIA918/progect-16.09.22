@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Спортивное питание</title>
+  <link rel="icon" href="../img/icons/weightliftsport_weightlift_13267.png" sizes="50x50" type="img/icon.png">
+
+  <link rel="stylesheet" type="text/css" href="../css/consultation.css">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;600&family=Lobster&family=Lora:wght@400;700&family=Playfair+Display:wght@700&family=Roboto:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="../img/icons/weightliftsport_weightlift_13267.png" alt="icon-sport">
+      </div>
+      <ul class="links">
+        <li><a href="../main.html">Главная</a></li>
+        <li><a href="./catalog.html">Кaталог</a></li>
+        <li><a href="./consultation.html">Консультация</a></li>
+        <li><a href="./contact.html">Контакты</a></li>
+        <li>
+          <botton class="box-btn">Регистрация</botton>
+          <div class="popup-overlay hidden">
+            <form class="order-form" action="" method="POST" id="registrationForm">
+              <div class="close"><img src="../img/svg/211652_close_icon.svg"></div>
+              <h2>Регистрация</h2>
+              <input type="email" name="email" value="" id="email" required placeholder="Email" />
+              <input type="text" name="password" value="" id="password" required placeholder="Пароль" />
+              <input type="text" name="repeatPassword" value="" id="repeatPassword" required placeholder="Пaвторный пароль" />
+              <button class="btn-registration" type="submit">Отправить</button>
+            </form>
+          </div>
+        </li>
+      </ul>
+      <div class="toggle">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+    <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="../main.html" title="Главная" itemprop="item">
+          <span itemprop="name">Главная</span>
+          <meta itemprop="position" content="0">
+        </a>
+      </li>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="../html/catalog.html" title="Каталог" itemprop="item">
+          <span itemprop="name">Каталог</span>
+          <meta itemprop="position" content="1">
+        </a>
+      </li>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="../html/consultation.html" title="Консультация" itemprop="item">
+          <span itemprop="name">Консультация</span>
+          <meta itemprop="position" content="2">
+        </a>
+      </li>
+    </ol>
+  </header>
+  <h3>Затрудняешься с выбором или нужна консультация? </h3>
+  <div class="content-center">
+    <div class="consultation-gym">
+      <img class="consultation-img" src="../img/consultation/KpXlSjJVMiA.jpg" alt="img-gym">
+    </div>
+    <div class="consultation-content">
+      <p>Мы бесплатно проконсультируем и подберем индивидуально для Вас необходимые добавки!
+        <br>Заполни поля и наш консультант свяжется с Вами!</p>
+    </div>
+    <form action="" method="POST" id="consultationForm">
+      <h2>Консультация</h2>
+      <div class="alert">Сообщение отправлено</div>
+      <fieldset>
+        <label for="">Имя:</label>
+        <input type="text" name="name" value="" id="name" required placeholder="Имя" />
+        <label for="">Электронная почта:</label>
+        <input type="email" name="email" value="" id="email" required placeholder="Email" />
+        <label for="">Телефон:</label>
+        <input type="telephone" name="telephone" value="" id="telephone" required placeholder="Телефон" />
+        <label for="">Написать сообщение:</label>
+        <textarea type="text" name="textarea" value="" id="textarea" required></textarea>
+      </fieldset>
+      <button type="submit">Отправить</button>
+    </form>
+  </div>
+  <div class="callback-bt">
+    <div class="text-call">
+      <a href=""><span>Задать<br>вопрос</span></a>
+    </div>
+  </div>
+  <footer>
+    <div class="Copyright">
+      &#169; Copyright 2022 &#8208; GUM-LIFE &#8208; All Rights Reserved
+    </div>
+    <div class="icon-footer">
+      <a href="https://vk.com/"><img src="../img/svg/1492718766-vk_83600.svg" alt="vk"></a>
+      <a href="https://www.instagram.com/"><img src="../img/svg/instagram_black_logo_icon_147122.svg" alt="instagram"></a>
+      <a href="https://web.telegram.org/"><img src="../img/svg/telegram_logo_icon_144811.svg" alt="telegram"></a>
+    </div>
+  </footer>
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+  <script src="../js/consultation.js"></script>
+</body>
+
+</html>

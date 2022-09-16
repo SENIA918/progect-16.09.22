@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Спортивное питание</title>
+  <link rel="icon" href="../img/icons/weightliftsport_weightlift_13267.png" sizes="50x50" type="img/icon.png">
+  <link rel="stylesheet" type="text/css" href="../css/contact.css">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;600&family=Lobster&family=Lora:wght@400;700&family=Playfair+Display:wght@700&family=Roboto:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+  <script src="icon_customImage.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="../img/icons/weightliftsport_weightlift_13267.png" alt="icon-sport">
+      </div>
+      <div class="weither">
+        <p class="weatherTitle"></p>
+        <p class="weatherTime"></p>
+        <p class="weatherForecast"></p>
+      </div>
+      <ul class="links">
+        <li><a href="../main.html">Главная</a></li>
+        <li><a href="./catalog.html">Кaталог</a></li>
+        <li><a href="./consultation.html">Консультация</a></li>
+        <li><a href="./contact.html">Контакты</a></li>
+        <li>
+          <botton class="box-btn">Регистрация</botton>
+          <div class="popup-overlay hidden">
+            <form class="order-form" action="" method="POST" id="registrationForm">
+              <div class="close"><img src="../img/svg/211652_close_icon.svg"></div>
+              <h2>Регистрация</h2>
+              <input type="email" name="email" value="" id="email" required placeholder="Email" />
+              <input type="text" name="password" value="" id="password" required placeholder="Пароль" />
+              <input type="text" name="repeatPassword" value="" id="repeatPassword" required placeholder="Пaвторный пароль" />
+              <button class="btn-registration" type="submit">Отправить</button>
+            </form>
+          </div>
+        </li>
+      </ul>
+      <div class="toggle">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+    <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="../main.html" title="Главная" itemprop="item">
+          <span itemprop="name">Главная</span>
+          <meta itemprop="position" content="0">
+        </a>
+      </li>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="../html/catalog.html" title="Каталог" itemprop="item">
+          <span itemprop="name">Каталог</span>
+          <meta itemprop="position" content="1">
+        </a>
+      </li>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="../html/consultation.html" title="Консультация" itemprop="item">
+          <span itemprop="name">Консультация</span>
+          <meta itemprop="position" content="2">
+        </a>
+      </li>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="../html/contact.html" title="Контакты" itemprop="item">
+          <span itemprop="name">Контакты</span>
+          <meta itemprop="position" content="3">
+        </a>
+      </li>
+    </ol>
+  </header>
+  <h3>Наши адреса</h3>
+  <div id="map"></div>
+  <div class="contact-bay">
+    <h3>Магазин спортивного питания GUM-LIFE.by</h3>
+    <p>Магазин находится в г. Гомеле по адресу:
+      <br> пр-т. Октября
+      <br> Режим работы:
+      <br> Пн. – сб.: с 9:00 до 18:00
+      <br> Суббота-Воскресенье -выходной
+    </p>
+  </div>
+  <div class="callback-bt">
+    <a href="../html/consultation.html">
+      <div class="text-call">
+        <span>Задать<br>вопрос</span>
+      </div>
+    </a>
+  </div>
+  <footer>
+    <div class="Copyright">
+      &#169; Copyright 2022 &#8208; GUM-LIFE &#8208; All Rights Reserved
+    </div>
+    <div class="icon-footer">
+      <a href="https://vk.com/"><img src="../img/svg/1492718766-vk_83600.svg" alt="vk"></a>
+      <a href="https://www.instagram.com/"><img src="../img/svg/instagram_black_logo_icon_147122.svg" alt="instagram"></a>
+      <a href="https://web.telegram.org/"><img src="../img/svg/telegram_logo_icon_144811.svg" alt="telegram"></a>
+    </div>
+  </footer>
+  <script src="../js/contact.js"></script>
+</body>
+
+</html>

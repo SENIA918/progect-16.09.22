@@ -1,0 +1,17 @@
+#map {
+  max-width: 1200px;
+  height: 550px; 
+  padding: 0; 
+  margin: 20px auto;
+}
+.contact-bay {
+ margin: 20px 0;
+ text-align: center;
+}
+.btn-contact {
+  margin-top: 20px;
+  
+}
+.weither {
+  margin-left: 20px;
+}

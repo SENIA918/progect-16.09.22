@@ -1,0 +1,43 @@
+.cards {
+  max-width: 250px ;
+} 
+.cards-img {
+  border-radius: 5px;
+  width: 200px;
+  height: 100px;
+}
+.cards-body {
+  border: 1px solid gray;
+}
+.priceCheque {
+  margin: 20px 30px 20px 60px;
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+#resultMessages {
+  display: flex;
+  text-align: center; 
+}
+tr {
+  display: inline-block;
+  width: 300px;
+  height: 400px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  margin: 5px;
+}
+td {
+  display: block;
+}
+.catalogImg {
+  margin: 10px;
+  text-align: center; 
+  width: 280px;
+  height: 250px;
+}
+@media screen and (max-width: 420px) {
+  .priceCheque {
+    margin: 20px 30px 20px 10px;
+    
+  }
+}
