@@ -1,3 +1,6 @@
+h3 {
+  font-weight: 100;
+}
 .cards {
   max-width: 250px ;
 } 
@@ -9,10 +12,14 @@
 .cards-body {
   border: 1px solid gray;
 }
-.priceCheque {
-  margin: 20px 30px 20px 60px;
-  border: 2px solid grey;
-  border-radius: 5px;
+#priceCheque {
+  color: grey;
+  background: white;
+  margin: 20px 0 30px  60px;
+  padding: 0;
+  width: 280px;
+  height: 40px;
+  
 }
 #resultMessages {
   display: flex;
@@ -35,8 +42,9 @@ td {
   width: 280px;
   height: 250px;
 }
+
 @media screen and (max-width: 420px) {
-  .priceCheque {
+  #priceCheque {
     margin: 20px 30px 20px 10px;
     
   }

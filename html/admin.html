@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/admin.css" />
   <title>Admin</title>
+ 
   <link rel="icon" href="../img/icons/weightliftsport_weightlift_13267.png" sizes="50x50" type="img/icon.png">
 </head>
 
@@ -14,30 +15,31 @@
   <div class="box">
     <section id="four">
       <div class="container" id="contactForm">
-        <h3>Каталог</h3>
+        <h2>Каталог</h2>
         <p>Ввод карточки:</p>
         <form method="POST" action="#">
           <label for="">Cсылка картинки:</label>
-          <input type="text" name="img" id="catalogImg" />
+          <input type="text" name="img" id="catalogImg" required />
           <label for="">Название товара:</label>
-          <input type="text" name="name" id="catalogName" />
+          <input type="text" name="name" id="catalogName"required  />
           <label for="">Описание товара:</label>
-          <input type="text" name="description" id="catalogDescription" />
+          <input type="text" name="description" id="catalogDescription" required />
           <label for="">Цена:</label>
-          <input type="text" name="price" id="catalogPrace"></input>
+          <input type="text" name="price" id="catalogPrace" required ></input>
           <button type="submit" class="special" onclick="return saveToFirebase(event)" id="contactSendButton">Отправить</button>
           <button type="reset" id="catalogResetButton">Сбросить</button>
         </form>
       </div>
+      
       <div class="container" id="contactResult"></div>
-      <button id="catalogBtn" type="submit" onclick="return getCatalog(),getConsultation(),getRegistration()">обнновить</button>
+      <button id="catalogBtn" type="submit" onclick="return getCatalog(),getConsultation(),getRegistration()">Oбновить</button>
       <br>
       <br>
-      <h4>Отправленные данные:</h4>
+      <h2>Отправленные данные по каталогу</h2>
       <div id="resultMessages"></div>
-      <h4>Консультация:</h4>
+      <h2>Консультация</h2>
       <div id="resultMessagesCons"></div>
-      <h4>Регистрация:</h4>
+      <h2>Регистрация</h2>
       <div id="resultMessagesRegistration"></div>
   </div>
   </section>

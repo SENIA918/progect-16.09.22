@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Спортивное питание</title>
   <link rel="icon" href="../img/icons/weightliftsport_weightlift_13267.png" sizes="50x50" type="img/icon.png">
-
   <link rel="stylesheet" type="text/css" href="../css/consultation.css">
   <link rel="stylesheet" type="text/css" href="../css/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,26 +18,13 @@
   <header>
     <div class="navbar">
       <div class="logo">
-        <img src="../img/icons/weightliftsport_weightlift_13267.png" alt="icon-sport">
+        <img src="../img/icons/icons8-sport-64.png" alt="icon-sport">
       </div>
       <ul class="links">
         <li><a href="../main.html">Главная</a></li>
         <li><a href="./catalog.html">Кaталог</a></li>
         <li><a href="./consultation.html">Консультация</a></li>
         <li><a href="./contact.html">Контакты</a></li>
-        <li>
-          <botton class="box-btn">Регистрация</botton>
-          <div class="popup-overlay hidden">
-            <form class="order-form" action="" method="POST" id="registrationForm">
-              <div class="close"><img src="../img/svg/211652_close_icon.svg"></div>
-              <h2>Регистрация</h2>
-              <input type="email" name="email" value="" id="email" required placeholder="Email" />
-              <input type="text" name="password" value="" id="password" required placeholder="Пароль" />
-              <input type="text" name="repeatPassword" value="" id="repeatPassword" required placeholder="Пaвторный пароль" />
-              <button class="btn-registration" type="submit">Отправить</button>
-            </form>
-          </div>
-        </li>
       </ul>
       <div class="toggle">
         <div class="line1"></div>
@@ -89,7 +75,7 @@
         <label for="">Написать сообщение:</label>
         <textarea type="text" name="textarea" value="" id="textarea" required></textarea>
       </fieldset>
-      <button type="submit">Отправить</button>
+      <button class="btnConsultation" type="submit">Отправить</button>
     </form>
   </div>
   <div class="callback-bt">
@@ -108,7 +94,7 @@
     </div>
   </footer>
   <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
-  <script src="../js/consultation.js"></script>
+  <script src="../js/consultation.js" type="module"></script>
+  <script src="../js/firebase.js" type="module"></script>
 </body>
-
 </html>

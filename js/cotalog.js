@@ -9,27 +9,6 @@ window.addEventListener("scroll", e => {
     else navbar.classList.remove("sticky");
 });
 
-const popup = document.querySelector(".popup-overlay");
-const btn = document.querySelector(".box-btn");
-const close = document.querySelector(".close");
-
-btn.addEventListener("click", function(event) {
-    event.preventDefault();
-    popup.classList.remove("hidden");
-});
-
-popup.addEventListener("click", function(event) {
-    e = event || window.event
-    if (e.target == this) {
-        popup.classList.add("hidden");
-    }
-});
-
-close.addEventListener("click", function(event) {
-    event.preventDefault();
-    popup.classList.add("hidden");
-});
-
 const firebaseConfigs = {
     apiKey: "AIzaSyDGLn2Yqhwapd9znbJjGAOPzdHcm2Rmidg",
     authDomain: "consultation-form-97ed5.firebaseapp.com",
@@ -59,31 +38,39 @@ function getCatalog() {
             let cell3 = row.insertCell(2);
             let cell4 = row.insertCell(3);
             let cell5 = row.insertCell(4);
-
-            childSnapshot.forEach(function(childValue) {
-                let childKey = childValue.key;
-                let childData = childValue.val();
-
-                switch (childKey) {
-                    case 'image':
-                        img.src = childData;
-                        break;
-                    case 'name':
-                        cell3.innerHTML = childData;
-                        break;
-                    case 'description':
-                        cell4.innerHTML = '' + childData;
-                        break;
-                    case 'price':
-                        cell5.innerHTML = 'цена :' + childData;
-                        break;
-                    default:
-                        break;
-                }
-            });
-            i = i++;
+                
+childSnapshot.forEach(function (childValue) {
+    let childKey = childValue.key;
+    let childData = childValue.val();
+        switch (childKey) {
+            case 'image':
+                img.src = childData;
+                break;
+            case 'name':
+                cell3.innerHTML = childData;
+                break;
+            case 'description':
+                cell4.innerHTML = '' + childData;
+                break;
+            case 'price':
+                cell5.innerHTML = 'цена :' + childData;
+                break;
+            default:
+                break;
+            }
         });
-
+        i = i++;
+    });
+    function readIssues() {
+        catalogRef.orderByChild("price").on("child_added", snap => {
+            console.log(snap.val());    
+        });
+    }
+    const priceCheque = document.getElementById('priceCheque');
+        priceCheque.onclick = function () {
+            readIssues();
+        }
     });
 };
 getCatalog();
+

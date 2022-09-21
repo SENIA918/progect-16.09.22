@@ -1,3 +1,5 @@
+
+
 const navbar = document.querySelector(".navbar");
 navbar.querySelector(".toggle").addEventListener("click", () => {
     navbar.classList.toggle("collapsed");
@@ -18,10 +20,11 @@ const firebaseConfig = {
     messagingSenderId: "22750241094",
     appId: "1:22750241094:web:3a7b3dd428fcf5380a8547"
 };
+
+//import firebaseConfig from './js/firebase.js';
 firebase.initializeApp(firebaseConfig);
 
 let formMessage = firebase.database().ref('CONSULTATION');
-
 document.getElementById('consultationForm')
 document.addEventListener('submit', formSubmit, sendMessage);
 
@@ -33,13 +36,10 @@ function formSubmit(e) {
     let textarea = document.querySelector('#textarea').value;
 
     sendMessage(name, email, telephone, textarea);
-
     document.querySelector('.alert').style.display = 'block';
-
     setTimeout(function() {
         document.querySelector('.alert').style.display = 'none';
     }, 5000);
-
     document.getElementById('consultationForm').reset();
 }
 
@@ -51,26 +51,4 @@ function sendMessage(name, email, telephone, textarea) {
         telephone: telephone,
         textarea: textarea
     });
-
 }
-
-const popup = document.querySelector(".popup-overlay");
-const btn = document.querySelector(".box-btn");
-const close = document.querySelector(".close");
-
-btn.addEventListener("click", function(event) {
-    event.preventDefault();
-    popup.classList.remove("hidden");
-});
-
-popup.addEventListener("click", function(event) {
-    e = event || window.event
-    if (e.target == this) {
-        popup.classList.add("hidden");
-    }
-});
-
-close.addEventListener("click", function(event) {
-    event.preventDefault();
-    popup.classList.add("hidden");
-});

@@ -14,13 +14,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;600&family=Lobster&family=Lora:wght@400;700&family=Playfair+Display:wght@700&family=Roboto:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
   <script src="icon_customImage.js" type="text/javascript"></script>
+  
 </head>
 
 <body>
   <header>
     <div class="navbar">
       <div class="logo">
-        <img src="../img/icons/weightliftsport_weightlift_13267.png" alt="icon-sport">
+        <img src="../img/icons/icons8-sport-64.png" alt="icon-sport">
       </div>
       <div class="weither">
         <p class="weatherTitle"></p>
@@ -32,19 +33,6 @@
         <li><a href="./catalog.html">Кaталог</a></li>
         <li><a href="./consultation.html">Консультация</a></li>
         <li><a href="./contact.html">Контакты</a></li>
-        <li>
-          <botton class="box-btn">Регистрация</botton>
-          <div class="popup-overlay hidden">
-            <form class="order-form" action="" method="POST" id="registrationForm">
-              <div class="close"><img src="../img/svg/211652_close_icon.svg"></div>
-              <h2>Регистрация</h2>
-              <input type="email" name="email" value="" id="email" required placeholder="Email" />
-              <input type="text" name="password" value="" id="password" required placeholder="Пароль" />
-              <input type="text" name="repeatPassword" value="" id="repeatPassword" required placeholder="Пaвторный пароль" />
-              <button class="btn-registration" type="submit">Отправить</button>
-            </form>
-          </div>
-        </li>
       </ul>
       <div class="toggle">
         <div class="line1"></div>
@@ -80,16 +68,46 @@
     </ol>
   </header>
   <h3>Наши адреса</h3>
-  <div id="map"></div>
-  <div class="contact-bay">
-    <h3>Магазин спортивного питания GUM-LIFE.by</h3>
-    <p>Магазин находится в г. Гомеле по адресу:
-      <br> пр-т. Октября
-      <br> Режим работы:
-      <br> Пн. – сб.: с 9:00 до 18:00
-      <br> Суббота-Воскресенье -выходной
-    </p>
+  <div class="boxConact">
+    <div class="nesolestag-enadenud">
+      <div class="ico-wrap"><img class="img-wrap" src="../img/contact/icons8-адрес-50.png">
+      </div>
+      <div class="meanous-andscoev">
+        <h4 class="aio-icon-title">Юридический адрес:</h4>
+        <div class="aio-icon-description">
+          3486452, г. Тюмень, ул. Ленина,
+          <br>дом 14, литер D, Кабинет # 31</div>
+      </div>
+      <span class="kesednsoled"></span>
+      <div class="ico-wrap"><img class="img-wrap" src="../img/contact/icons8-время-встречи-48.png"> 
+      </div>
+      <div class="meanous-andscoev">
+        <h4 class="aio-icon-title">График работы складов и офисов компании:</h4>
+        <div class="aio-icon-description">
+        пн.-сб. с 10:00 до 21:00, с перерывом на обед
+        <br>Без выходных</div>
+      </div>
+      <span class="kesednsoled"></span>
+      <div class="ico-wrap"><img class="img-wrap" src="../img/contact/icons8-конверт-в-круге-50.png"></div>
+      <div class="meanous-andscoev">
+        <h4 class="aio-icon-title">Электронная почта:</h4>
+        <div class="aio-icon-description">
+          zprmet_ru.@mail.ru
+          <br>desantura.@mail.ru</div>
+        </div>
+        <span class="kesednsoled"></span>
+      <div class="ico-wrap"><img class="img-wrap" src="../img/contact/icons8-звонящий-телефон-50.png"></div>
+      <div class="meanous-andscoev">
+        <h4 class="aio-icon-title">Связь по телефону:</h4>
+        <div class="aio-icon-description">
+          8 (423) 031-53-78
+          <br>8 (723) 904-52-72</div>
+        </div>
+        <span class="kesednsoled"></span>
+      </div>
+    <div id="map"></div>
   </div>
+</div>
   <div class="callback-bt">
     <a href="../html/consultation.html">
       <div class="text-call">

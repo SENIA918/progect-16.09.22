@@ -1,3 +1,6 @@
+
+
+
 const navbar = document.querySelector(".navbar");
 navbar.querySelector(".toggle").addEventListener("click", () => {
     navbar.classList.toggle("collapsed");
@@ -77,26 +80,6 @@ navigator.geolocation.getCurrentPosition((position) => {
 
 });
 
-const popup = document.querySelector(".popup-overlay");
-const btn = document.querySelector(".box-btn");
-const close = document.querySelector(".close");
-
-btn.addEventListener("click", function(event) {
-    event.preventDefault();
-    popup.classList.remove("hidden");
-});
-
-popup.addEventListener("click", function(event) {
-    e = event || window.event
-    if (e.target == this) {
-        popup.classList.add("hidden");
-    }
-});
-close.addEventListener("click", function(event) {
-    event.preventDefault();
-    popup.classList.add("hidden");
-});
-
 const firebaseConfigs = {
     apiKey: "AIzaSyDGLn2Yqhwapd9znbJjGAOPzdHcm2Rmidg",
     authDomain: "consultation-form-97ed5.firebaseapp.com",
@@ -108,7 +91,7 @@ const firebaseConfigs = {
 };
 firebase.initializeApp(firebaseConfigs);
 
-let formMessages = firebase.database().ref('REGISTRATION');
+let formMessage = firebase.database().ref('REGISTRATION');
 
 document.getElementById('registrationForm')
 document.addEventListener('submit', formSubmit, sendMessage);

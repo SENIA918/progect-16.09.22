@@ -1,17 +1,81 @@
 #map {
-  max-width: 1200px;
-  height: 550px; 
+  max-width: 700px;
+  
   padding: 0; 
-  margin: 20px auto;
+  margin-right: 40px;
 }
-.contact-bay {
- margin: 20px 0;
- text-align: center;
+.boxConact {
+  display: grid;
+  grid-template-columns: 550px 700px;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 10px;
 }
 .btn-contact {
   margin-top: 20px;
-  
 }
 .weither {
   margin-left: 20px;
+}
+.nesolestag-enadenud {
+  max-width: 510px;
+  margin: 0 auto;
+  border-radius: 5px;
+  
+}
+.kesednsoled:after,
+.kesednsoled:before {
+  content: ".";
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+  clear: both;
+}
+.ico-wrap {
+  color: #2d445a;
+  width: 48px;
+  height: 48px;
+  margin: 30px 18px 5px 5px;
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  float: left;
+}
+.ico-contact {
+  line-height: 1.9 !important;
+}
+.meanous-andscoev {
+  float: left;
+  margin-bottom: 30px;
+}
+.aio-icon-title {
+  font-size: 16px;
+  color: #455d74;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+@media screen and (max-width: 840px) {
+  .meanous-andscoev,
+  .ico-wrap {
+  float: none;
+  text-align: center;
+  }
+  .ico-wrap {
+  margin: 0 auto 15px auto;
+  }
+  .boxConact {
+    display: block;
+  }
+  #map {
+    margin-right: 0;
+  }
+  .boxConact {
+    
+    margin-top: 10px;
+    
+  }
 }

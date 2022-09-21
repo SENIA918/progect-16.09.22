@@ -1,3 +1,6 @@
+body {
+  background-color: rgb(238, 227, 227);
+}
 *{
   font-family: 'Inter', sans-serif;
   font-family: 'Lobster', cursive;
@@ -9,12 +12,17 @@
   box-sizing: border-box;
   color: #555f68;
 }
+h3 {
+  color: #2d445a;
+}
 h5,
 h4,
 h3 {
   max-width: 1200px;
   text-align: center;
   margin: 25px auto;
+  font-weight: 100;
+  font-size: 23px;
 }
 a {
   text-decoration: none;
@@ -30,24 +38,24 @@ a {
   text-align: center
 }
 .order-form {
-    background: rgb(255, 255, 255);
-    border-radius: 14px;
-    box-shadow: 1px 0px 5px rgb(125, 125, 125);
-    box-sizing: border-box;
-    height: 360px;
-    width: 430px;
-    padding: 20px;
-    margin: 100px auto;
-    position: relative;;
+  background: rgb(255, 255, 255);
+  border-radius: 14px;
+  box-shadow: 1px 0px 5px rgb(125, 125, 125);
+  box-sizing: border-box;
+  height: 360px;
+  width: 430px;
+  padding: 20px;
+  margin: 100px auto;
+  position: relative;;
 }
 .close {
-    display: block;
-    position: absolute;
-    right: 20px;
-    cursor: pointer;
+  display: block;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
 }
 .hidden {
-    display: none;
+  display: none;
 }
 input[type='text'],
 input[type='email'],
@@ -105,11 +113,11 @@ ul {
   margin: 0;
 }
 .navbar {
-  background: #918888;
-  color: #fff;
+  background: #b9aeae;
+  color: rgb(114, 103, 103);
   padding: 0;
   width: 100%;
-  height: 65px;
+  height: 70px;
   display: flex;
   align-items: center;
 }
@@ -131,10 +139,13 @@ ul {
   padding: 3px;
   color: #e8edf1;
 }
+.box-btn:hover{
+  color:#413832;
+}
 .navbar ul.links li {
   text-transform: uppercase;
   padding: 0 15px;
-  height: 65px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -142,7 +153,7 @@ ul {
 }
 .navbar ul.links li a {
   text-decoration: none;
-  color: rgb(26, 24, 24);
+  color: #2d445a;
 }
 .navbar ul.links li:hover {
   background: #a8a495;
@@ -161,7 +172,7 @@ ul {
   top: 65px;
 }
 ol.breadcrumb { 
-  padding-top: 20px;
+  padding-top: 40px;
 }
 ol.breadcrumb li {
   display: inline-block;
@@ -195,7 +206,7 @@ ol.breadcrumb li:last-of-type:after {
   display: none; 
 }
 ol.breadcrumb li a { 
-  color: #000;
+  color: #2d445a;
   font-size: 16px;
   text-decoration: none;
   transition: all 0.3s;
@@ -254,7 +265,7 @@ ol.breadcrumb li a:hover {
 footer {
   text-align: center;
   height: 100px;
-  background-color: #918888;
+  background: #b9aeae;
   margin-top: 25px;
 }
 .icon-footer {
@@ -264,6 +275,7 @@ footer {
   padding-top: 10px;
 }
 .icon-footer a {
+  margin: 1px;
   width: 40px;
   height: 40px;
 }
